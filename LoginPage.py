@@ -63,22 +63,22 @@ class LoginPageClass:
 
 LoginPageClass()
 
-# passwordEntry.pack()
-# def checkValidUserPass():
-#     userStr = userNameVar.get()
-#     passwordEnteredStr = passwordVar.get()
-#     var = StringVar()
-#     var.set("Your username or password is incorrect.")
-# #Username: Justin Password: Vivobook
-#     if userStr != "Justin" or passwordEnteredStr != "Vivobook":
-#         messagebox.showerror("Error", "Incorrect username or password")
-#         # popup = Message(textvariable=var, relief=RAISED)
-#         # popup.pack()
-#
-# b = Button(root,text='Login',command=checkValidUserPass)
-# b.pack()
-#
-# signUpButton = Button(root,text='Sign Up?',command=checkValidUserPass)
-# signUpButton.pack()
+passwordEntry.pack()
+def checkValidUserPass():
+    userStr = userNameVar.get()
+    passwordEnteredStr = passwordVar.get()
+    var = StringVar()
+    var.set("Your username or password is incorrect.")
+#Username: Justin Password: Vivobook
+    if userStr != "Justin" or passwordEnteredStr != "Vivobook":
+        messagebox.showerror("Error", "Incorrect username or password")
+        # popup = Message(textvariable=var, relief=RAISED)
+        # popup.pack()
+
+b = Button(root,text='Login',command=checkValidUserPass)
+b.pack()
+
+signUpButton = Button(root,text='Sign Up?',command=checkValidUserPass)
+signUpButton.pack()
 #
 # root.mainloop()
