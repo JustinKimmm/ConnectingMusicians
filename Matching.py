@@ -6,7 +6,7 @@ x = "Saxophone"
 
 class MatchingClass:
     def __init__(self):
-        finalInput = cursor.execute("SELECT ID FROM Musician WHERE ID=(SELECT max(ID) FROM Musician);")
+        finalInput = f"""SELECT ID FROM Musician SORT BY DESC LIMIT 1"""
         print(type(finalInput));
         print(finalInput)
         select_query = f"""SELECT * FROM Musician
